@@ -1,0 +1,294 @@
+/* configuração geral */
+
+body {
+  color: #333;
+  font-family: "Lucida Sans Unicode", "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", Geneva, Verdana, sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 940px;
+}
+
+/* configuração do header (logo,sacola e menu-opções)*/
+
+header {
+  position: relative;
+}
+
+.sacola {
+  background-image: url(../assets/img/sacola.png);
+  background-repeat: no-repeat;
+  background-position: top right;
+
+  font-size: 14px;
+  padding-right: 35px;
+  text-align: right;
+  width: 140px;
+
+  padding-top: 8px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.menu-opcoes {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.menu-opcoes ul {
+  font-size: 15px;
+}
+
+.menu-opcoes ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.menu-opcoes a {
+  color: #036;
+}
+
+.menu-opcoes a:hover {
+  color: #007dc6;
+}
+
+.menu-opcoes a:active {
+  color: #867dc6;
+}
+
+/* fim da config header */
+
+/* config .container .destaque, .busca, .menu-departamentos, .banner */
+
+.busca{
+
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+
+
+}
+
+.busca button {
+  background-image: url(/root/assets/img/busca.png);
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 4px;
+
+  width: 20px;
+  height: 20px;
+
+  text-indent: -9999px;
+}
+
+.busca input[type="search"] {
+  width: 180px;
+  border-radius: 4px;
+}
+
+.busca,
+.menu-departamentos {
+  background-color: #dcdcdc;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  margin-right: 10px;
+  width: 230px;
+
+  float: left;
+}
+
+
+
+.busca h2,
+.busca form,
+.menu-departamentos h2 {
+  margin: 10px;
+}
+
+.menu-departamentos {
+  clear: left;
+
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+
+.menu-departamentos li {
+  background-color: white;
+  margin-bottom: 1px;
+  padding: 5px 10px;
+}
+
+
+
+.menu-departamentos a {
+  color: #333;
+  text-decoration: none;
+}
+
+.menu-departamentos li ul {
+  display: none;
+}
+
+.menu-departamentos li:hover ul {
+  display: block;
+}
+
+.menu-departamentos ul ul li {
+  background-color: #dcdcdc;
+  border-radius: 5px;
+}
+
+.menu-departamentos li li a:before {
+  content: "\272A";
+  padding-right: 3px;
+}
+
+.destaque {
+  margin-top: 10px;
+}
+
+/* fim config .container .destaque, .busca, .menu-departamentos, .banner */
+
+/* config .painel, .novidades, .mais-vendidos, .paineis */
+
+.painel {
+  margin: 10px 0;
+  padding: 10px;
+  width: 445px;
+
+  border-radius: 4px;
+  box-shadow: inset 1px 1px 4px #999;
+}
+
+.painel h2:before {
+  content: "\2756";
+  padding-right: 5px;
+  opacity: 0.4;
+}
+
+.painel h2 {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  margin-bottom: 10px;
+
+  text-shadow: 3px 3px 2px rgba(255,255,255,0.8);
+  
+}
+
+.painel li {
+  display: inline-block;
+  vertical-align: top;
+  width: 140px;
+
+  margin: 2px;
+  padding-bottom: 10px;
+
+  transition: 1s ease-in;
+}
+
+.painel li:hover {
+
+  border-radius: 15px;
+  background-color: rgba(255,255,255,0.8);
+  box-shadow: 0 0 5px #333;
+  transition: 0.7s ease-out;  
+}
+
+.painel li:nth-child(2n):hover{
+  transform: scale(1.2) rotate(5deg);
+}
+
+.painel li:nth-child(2n+1):hover{
+  transform: scale(1.2) rotate(-5deg);
+}
+
+
+
+.paineis img {
+  border-radius: 4px;
+  gap: 10px;
+}
+
+.painel a {
+  color: #333;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.novidades {
+  float: right;
+
+  background-color: #f5dcdc;/*navegadores antigos*/
+  background: linear-gradient(#f5dcdc,#bebef4);
+
+  margin-left: 5px;
+}
+
+.mais-vendidos {
+  float: right;
+
+  background-color: #dcdcf5;/*navegadores antigos*/
+  background: linear-gradient(#dcdcf5,#f4bebe);
+
+
+  margin-right: 5px;
+}
+
+
+
+/* fim config .painel, .novidades, .mais-vendidos, .paineis */
+
+/* config footer, .social*/
+
+footer {
+  background-image: url(/root/assets/img/fundo-rodape.png);
+  clear: both;
+  padding: 20px 0;
+}
+
+footer .container {
+  position: relative;
+}
+
+.social {
+  position: absolute;
+  top: 12px;
+  right: 0;
+}
+
+.social li {
+  float: left;
+  margin-left: 25px;
+}
+
+.social a {
+  /* tamanho da imagem */
+  height: 32px;
+  width: 32px;
+
+  /* img replacement */
+  display: block;
+  text-indent: -9999px;
+}
+
+.social a[href*="facebook.com"] {
+  background-image: url(/root/assets/img/facebook.png);
+}
+
+.social a[href*="twitter.com"] {
+  background-image: url(/root/assets/img/twitter.png);
+}
+
+.social a[href*="plus.google.com"] {
+  background-image: url(/root/assets/img/googleplus.png);
+}
+
+/* fim config footer, .social */

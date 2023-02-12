@@ -1,0 +1,55 @@
+@media (max-width: 939px) {
+  /* config geral header, .sacola, .container, .menu-opcoes */
+
+  header h1 {
+    text-align: center;
+  }
+  header h1 img {
+    max-width: 50%;
+  }
+
+  .container {
+    width: 96%;
+  }
+
+  .sacola {
+    display: none;
+  }
+
+  .menu-opcoes {
+    position: static;
+    text-align: center;
+  }
+
+  .menu-opcoes ul li {
+    display: inline-block;
+    margin: 5px;
+  }
+
+  /* fim  config geral header, .sacola, .container, .menu-opcoes */
+
+  /* config .busca, . menu-departamento, .banner-destaque */
+  .busca,
+  .menu-departamentos,
+  .banner-destaque img {
+    margin-right: 0;
+    width: 100%;
+  }
+
+  /* config .busca, . menu-departamento, .banner-destaque */
+
+  /* config .painel */
+
+  .painel{
+    width: auto;
+  }
+  .painel li{
+    width: 30%;
+  }
+
+  .painel img{
+    width: 100%;
+  }
+
+
+}
